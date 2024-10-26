@@ -1,4 +1,4 @@
-rootProject.name = "gradle-multi-module-project-template"
+rootProject.name = "JunkTools"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
