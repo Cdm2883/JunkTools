@@ -1,0 +1,32 @@
+{
+  "name": "junk-ts-converter",
+  "description": "Subproject of JunkTools that convert any Typescript to Kotlin stubs.",
+  "homepage": "https://github.com/Cdm2883/JunkTools/tree/main/junk-ts/converter",
+  "license": "Apache-2.0",
+  "main": "build/ts-lib/flow.mjs",
+  "types": "build/ts-lib/flow.d.mts",
+  "bin": {
+    "junk-ts-converter": "build/ts-bin/cli.js"
+  },
+  "files": [
+    "build/**/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:lib && npm run build:cli",
+    "build:lib": "tsup flow.ts --format esm,cjs --dts --outDir build/ts-lib",
+    "build:cli": "tsup cli.ts --outDir build/ts-bin",
+    "clear": "rimraf build",
+    "test": "tsx cli.ts"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "ts-morph": "^24.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
