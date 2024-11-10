@@ -24,6 +24,10 @@ mapOf(
     "junk-graal" to listOf("",
         ":gradle-plugin",
     ),
+    "junk-wasm" to listOf("",
+        ":gradle-plugin",
+        ":common-browser-api",
+    ),
 ).forEach { (parent, subprojects) ->
     subprojects.forEach {
         include(":$parent$it")

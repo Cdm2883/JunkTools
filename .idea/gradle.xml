@@ -14,6 +14,9 @@
             <option value="$PROJECT_DIR$/junk-ts/converter" />
             <option value="$PROJECT_DIR$/junk-ts/gradle-plugin" />
             <option value="$PROJECT_DIR$/junk-ts/wrapper" />
+            <option value="$PROJECT_DIR$/junk-wasm" />
+            <option value="$PROJECT_DIR$/junk-wasm/common-browser-api" />
+            <option value="$PROJECT_DIR$/junk-wasm/gradle-plugin" />
           </set>
         </option>
       </GradleProjectSettings>
